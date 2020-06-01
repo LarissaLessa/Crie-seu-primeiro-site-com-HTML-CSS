@@ -1,0 +1,78 @@
+<!--Aula 10 - Formulário-->
+<!--Form (métodos e action), input text, input e-mail, input file,
+input number, input radio, input checkbox, input hidden, input password,
+LexLares, label, select, submit-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1.6>
+        <title>Document</title>
+    </head>
+    <body>
+        <div>
+        <form action="enviar.php" method="POST">
+            <label for="nome">Nome Completo</label>
+            <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+        </div>
+        <div>    
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
+        </div>
+        <div>    
+            <label for="foto">Sua Foto</label>
+            <input type="file" name="foto" id="foto" placeholder="Coloca sua foto aqui">
+        </div>
+        <div>    
+            <label for="idade">Digite idade</label>
+            <input type="number" name="idade" id="idade" placeholder="Digite sua idade" min="18" max="120">
+        </div>
+        <div>    
+            <label for="nacionalidade">Você é brasileiro?</label>
+            <label for="sim">Sim</label>
+            <input type="radio" name="brasileiro" id="Sim" value="1">
+            <label for="nao">Não</label>
+            <input type="radio" name="brasileiro" id="Sim" value="0">    
+        </div>
+        <div>
+            <label for="frutas">Quais frutas você gosta?</label>
+
+            <label for="maca">Maçã</label>
+            <input type="checkbox" name="frutas" id="maca" value="maca"> 
+            <label for="banana">Banana</label>
+            <input type="checkbox" name="frutas" id="banana" value="banana"> 
+            <label for="uva">Uva</label>
+            <input type="checkbox" name="frutas" id="uva" value="uva"> 
+        </div>
+        <inpu type="hidden" name="informacao_escondida" value="Meu usuário gosta de lavar">
+        <div>
+            <label for="password">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Digite sua senha" max="20">
+         </div>
+
+         <div>
+            <label for="mensagem">Sua mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+         </div>
+         <div>
+            <label for="navedoconhecimento">Sua nave</label>
+            <select name="nave" id="nave">
+            <option value="vila alianca">Vila Aliança</option>
+            <option value="penha">Penha</option>
+            <option value="santa cruz">Santa Cruz</option>
+            <option value="padre miguel">Padre Miguel</option>
+            <option value="madureira">Madureira</option>
+            <option value="iraja">Iraja</option>
+            <option value="engenhao">Engenhão</option>
+            <option value="cidade olimpica">Cidade Olímpica</option>
+            <option value="triagem">Triagem</option>
+        </select>
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+        </form>
+    </body>
+
+</html>
